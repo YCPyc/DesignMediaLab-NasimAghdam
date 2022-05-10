@@ -1,0 +1,17 @@
+body {
+    background-image: url("https://i.pinimg.com/originals/19/32/4a/19324a087a3ff2fcd50154d9979231c5.gif");
+    background-size: cover; 
+    background-repeat:repeat;
+   }
+
+li{
+    color: white;
+}
+
+h1{
+    color:red;
+}
+
+p{
+    color:green;
+}
