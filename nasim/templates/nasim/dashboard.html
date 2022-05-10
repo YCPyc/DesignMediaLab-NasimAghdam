@@ -1,0 +1,46 @@
+{% extends 'nasim/main.html' %}
+
+{% block content %}
+
+
+<ul>
+    <li>Biography
+        <ul>
+            
+            {% for item in bio %}
+            <li> <a href="{% url 'Biography' item.name %}">{{ item.name }} </a></li>
+            {% endfor %}
+        </ul>
+    </li>
+    <li>Animal
+        <ul>
+            {% for item in ani %}
+            <li> <a href="{% url 'Animal' item.name %}">{{ item.name }} </a></li>
+            {% endfor %}
+        </ul>
+    </li> 
+    <li>Veganism
+        <ul>
+            {% for item in veg %}
+            <li> <a href="{% url 'Veganism' item.name %}">{{ item.name }} </a></li>
+            {% endfor %}
+        </ul>
+    </li> 
+    <li>Immigration
+        <ul>
+            <li> <a  href="#">item</a></li>
+            <li><a  href="#">item</a></li>
+        </ul>
+    </li>
+    <li>Family Origin
+        <ul>
+            <li> <a  href="#">item</a></li>
+            <li><a  href="#">item</a></li>
+        </ul>
+    </li>
+</ul>
+
+
+{% endblock %}
+
+        
